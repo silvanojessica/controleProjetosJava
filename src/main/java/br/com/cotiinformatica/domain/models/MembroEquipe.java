@@ -8,11 +8,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.Data;
 
 @Data
-@Document(collection="membroequipe")
+@Document(collection = "membroequipe")
 public class MembroEquipe {
 
 	@Id
 	private UUID id;
 	private String nome;
 	private String papel;
+	private UUID equipeId;
 }
